@@ -1,0 +1,48 @@
+.navbar
+    padding: 7px 0 8px 0
+    &-block
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &-logo
+        display: flex    
+    &-info
+        display: flex
+        align-items: center 
+    &-contacts
+        display: flex
+        flex-direction: column
+        text-align: right   
+    &-adress
+        color: $text-color
+        font-size: 13px
+        font-weight: 400              
+    &-button
+        width: 170px
+        height: 49px
+        border-radius: 10px
+        background-color: #ffd200
+        margin-left: 30px
+        border: none
+        outline: none
+        cursor: pointer
+        padding: 18px 30px
+        color: $text-color
+        font-size: 13px
+        font-weight: 400
+    &-phone
+        color: $text-color
+        font-size: 20px
+        font-weight: 400
+        text-decoration: none
+        margin-top: 9px
+@media (max-width: 768px)    
+    .navbar
+        &-contacts
+            display: none
+        &-button
+            font-size: 12px
+            padding: 12px 16px
+        &-logo
+            width: 91px         
+
