@@ -29,6 +29,13 @@ img {
   }
 }
 
+@media (max-width: 576px) {
+  .container {
+    max-width: 320px;
+    width: 95%;
+  }
+}
+
 .navbar {
   padding: 7px 0 8px 0;
 }
@@ -95,7 +102,7 @@ img {
 .navbar-phone {
   color: #333333;
   font-size: 20px;
-  font-weight: 400;
+  font-weight: 700;
   text-decoration: none;
   margin-top: 9px;
 }
@@ -111,6 +118,24 @@ img {
   }
   .navbar-logo {
     min-width: 91px;
+  }
+}
+
+@media (max-width: 567px) {
+  .navbar-contacts {
+    display: none;
+  }
+  .navbar-button {
+    width: 137px;
+    height: 39px;
+    font-size: 9px;
+    font-weight: 700;
+    padding: 15px 26px;
+    margin-left: 49px;
+  }
+  .navbar-logo {
+    min-width: 91px;
+    min-height: 44px;
   }
 }
 /*# sourceMappingURL=style.css.map */
