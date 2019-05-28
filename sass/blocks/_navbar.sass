@@ -12,7 +12,8 @@
     &-contacts
         display: flex
         flex-direction: column
-        text-align: right   
+        text-align: right
+        +reg   
     &-adress
         color: $text-color
         font-size: 13px
@@ -29,13 +30,13 @@
         padding: 17px 29px
         color: $text-color
         font-size: 13px
-        font-weight: 700
+        +bold
     &-phone
         color: $text-color
         font-size: 20px
-        font-weight: 700
         text-decoration: none
         margin-top: 9px
+        +bold
 @media (max-width: 768px)    
     .navbar
         &-contacts
