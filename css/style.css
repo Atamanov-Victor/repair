@@ -168,7 +168,7 @@ img {
 .hero-text__title {
   font-size: 41px;
   line-height: 55px;
-  margin-bottom: 38px;
+  margin-bottom: 35px;
   font-family: 'Museo Sans Bold', sans-serif;
   font-weight: 700;
 }
@@ -177,12 +177,16 @@ img {
   display: inline-block;
   font-size: 20px;
   font-weight: 500;
-  margin-bottom: 69px;
+  margin-bottom: 68px;
   font-family: 'Museo Sans Bold', sans-serif;
   font-weight: 700;
 }
 
-.hero-text-image {
+.hero-image {
+  padding: 0;
+}
+
+.hero-image__main {
   -webkit-box-shadow: 7px 5px 10px rgba(0, 0, 0, 0.05), 16px 22px 35px rgba(0, 0, 0, 0.05);
           box-shadow: 7px 5px 10px rgba(0, 0, 0, 0.05), 16px 22px 35px rgba(0, 0, 0, 0.05);
 }
