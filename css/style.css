@@ -104,6 +104,7 @@ img {
     font-size: 12px;
     font-weight: 700;
     padding: 12px 16px;
+    margin-left: 15px;
   }
   .navbar-logo {
     min-width: 91px;
@@ -117,10 +118,10 @@ img {
   .navbar-button {
     width: 137px;
     height: 39px;
-    font-size: 9px;
+    font-size: 10px;
     font-weight: 700;
-    padding: 15px 26px;
-    margin-left: 49px;
+    padding: 15px 25px;
+    margin-left: 5px;
   }
   .navbar-logo {
     min-width: 91px;
@@ -137,6 +138,9 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .hero-text {
