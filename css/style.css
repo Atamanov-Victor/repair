@@ -381,6 +381,8 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-line-pack: center;
+      align-content: center;
   width: 100%;
   font-size: 15px;
   font-family: 'Museo Sans Light', sans-serif;
@@ -390,10 +392,17 @@ img {
 .offer__contact {
   display: block;
   max-width: 225px;
+  line-height: 24px;
 }
 
 .offer__form {
   margin-bottom: 31px;
+}
+
+.offer__phone {
+  font-size: 15px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
 }
 
 @media (max-width: 1200px) {
