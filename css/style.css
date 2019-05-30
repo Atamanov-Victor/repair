@@ -190,7 +190,7 @@ img {
 }
 
 .hero {
-  padding: 49px 0;
+  padding: 52px 0;
   background: #f5f5f5;
 }
 
@@ -222,7 +222,7 @@ img {
   display: inline-block;
   font-size: 20px;
   font-weight: 500;
-  margin-bottom: 66px;
+  margin-bottom: 68px;
   padding-left: 4px;
   font-family: 'Museo Sans Bold', sans-serif;
   font-weight: 700;
@@ -242,7 +242,7 @@ img {
 
 .hero-list {
   margin: 0px;
-  padding: 0px;
+  padding-left: 2px;
   font-family: 'Museo Sans Light', sans-serif;
   font-weight: 300;
 }
@@ -254,11 +254,15 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 23px;
+  margin-bottom: 27px;
 }
 
 .hero-list__item:last-child {
   margin-bottom: 0px;
+}
+
+.hero-list__item:nth-child(even) {
+  margin-bottom: 20px;
 }
 
 .hero-list__image {
@@ -275,7 +279,7 @@ img {
       -ms-flex-align: center;
           align-items: center;
   border-radius: 50%;
-  margin-right: 28px;
+  margin-right: 32px;
 }
 
 .hero-list__text {
@@ -326,7 +330,7 @@ img {
   background: url("../img/offer.png") no-repeat;
   background-size: contain;
   background-position: center right;
-  padding: 84px 0 92px 0;
+  padding: 55px 0 92px 6px;
   position: relative;
 }
 
@@ -349,7 +353,7 @@ img {
 .offer__title {
   max-width: 360px;
   line-height: 35px;
-  margin-bottom: 24px;
+  margin-bottom: 19px;
 }
 
 .offer__subtitle {
@@ -361,15 +365,22 @@ img {
 .offer__input {
   margin-bottom: 30px;
   width: 240px;
+  min-height: 65px;
 }
 
 .offer__input:first-child {
   margin-right: 10px;
 }
 
+.offer__input:focus {
+  border: 1px solid #d7bc45;
+  outline: none;
+}
+
 .offer__button {
   width: 100%;
   min-height: 70px;
+  margin-bottom: 0px;
   font-family: 'Museo Sans Bold', sans-serif;
   font-weight: 700;
 }
