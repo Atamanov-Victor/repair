@@ -114,6 +114,7 @@ img {
 }
 
 .uproll {
+  padding: 5px;
   display: none;
   position: fixed;
   top: 100px;

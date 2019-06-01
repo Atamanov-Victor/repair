@@ -5,7 +5,6 @@ $(document).ready(function(){
         if($(this).scrollTop() > 100) {
             up.fadeIn();
         } else {
-            up.addClass('uproll_active')
             up.fadeOut();
         }
     })
