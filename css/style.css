@@ -113,6 +113,18 @@ img {
   padding: 10px 15px;
 }
 
+.uproll {
+  display: none;
+  position: fixed;
+  top: 100px;
+  left: 50px;
+  font-size: 30px;
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid #ffd200;
+  cursor: pointer;
+  outline: none;
+}
+
 .navbar {
   padding: 7px 0 8px 0;
 }

@@ -1,17 +1,17 @@
-var button = document.querySelector('#button')
-var modal = document.querySelector('#modal')
-var close = document.querySelector('#close') 
-
-button.addEventListener('click', function(){
-    // console.log(modal.classList)
-    modal.classList.add('modal_active')
-    // console.log(modal.classList)
-    var leave = setTimeout(function(){
-        modal.classList.remove('modal_active')
-        clearTimeout(leave);
-     }, 5000) 
-})
-
-close.addEventListener('click', function(){
-    modal.classList.remove('modal_active')
+$(document).ready(function(){
+    var up = $('#up');
+    // up.fadeOut(0);
+    $(window).scroll(function() {
+        if($(this).scrollTop() > 100) {
+            up.fadeIn();
+        } else {
+            up.addClass('uproll_active')
+            up.fadeOut();
+        }
+    })
+    up.on('click', function(){
+        $('html').animate({
+            scrollTop: 0
+        }, 0)
+    })
 })
