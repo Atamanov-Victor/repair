@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    var up = $('#up');
+    var up = $('#uproll');
     // up.fadeOut(0);
     $(window).scroll(function() {
         if($(this).scrollTop() > 100) {
@@ -9,7 +9,7 @@ $(document).ready(function(){
         }
     })
     up.on('click', function(){
-        $('html').animate({
+        $('body, html').animate({
             scrollTop: 0
         }, 0)
     })
