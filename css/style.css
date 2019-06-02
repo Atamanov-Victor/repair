@@ -32,10 +32,13 @@ img {
   margin: auto;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1330px) {
   .uproll {
     display: none !important;
   }
+}
+
+@media (max-width: 1200px) {
   .container {
     width: 760px;
     width: 95%;
@@ -240,6 +243,13 @@ img {
   .navbar-logo {
     min-width: 91px;
     min-height: 44px;
+  }
+}
+
+@media (max-width: 320px) {
+  .navbar-logo {
+    max-width: 91px;
+    max-height: 44px;
   }
 }
 
