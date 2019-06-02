@@ -241,8 +241,8 @@ img {
     margin-left: 5px;
   }
   .navbar-logo {
-    min-width: 91px;
-    min-height: 44px;
+    max-width: 91px;
+    max-height: 44px;
   }
 }
 
