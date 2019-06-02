@@ -511,6 +511,7 @@ img {
   }
   .offer__contact {
     max-width: 225px;
+    margin-bottom: 10px;
   }
 }
 
