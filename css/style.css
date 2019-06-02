@@ -390,6 +390,12 @@ img {
   }
 }
 
+@media (max-width: 567px) {
+  .hero-image {
+    max-height: 320px;
+  }
+}
+
 @media (max-width: 320px) {
   .hero {
     padding: 10px;
@@ -504,8 +510,18 @@ img {
   }
 }
 
+@media (max-width: 567px) {
+  .offer__info {
+    display: block;
+  }
+  .offer__contact {
+    max-width: 400px;
+  }
+}
+
 @media (max-width: 768px) {
   .offer {
+    padding: 10px;
     background: white;
   }
   .offer-block {
