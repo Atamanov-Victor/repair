@@ -14,13 +14,21 @@
 
 .slider
     &__image
-        margin: auto               
+        margin: auto
+    &-item
+        outline: none                   
 
 @media (max-width: 320px)
     .portfolio
+        padding: 38px 0
         &__title
             max-width: 271px
             font-size: 18px
             margin-bottom: 41px
+            line-height: 1.27
         &-arrows
-            margin-top: 46px        
+            margin-top: 46px
+    .slider
+        &__image
+            max-width: 246px
+            max-height: 186px                

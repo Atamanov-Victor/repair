@@ -50,7 +50,9 @@ img
     &__left
         margin-right: 30px
     &__left,&__right
-        cursor: pointer            
+        &:hover
+            background: rgba(0,0,0,0.1) 
+            cursor: pointer            
 
 @media (max-width: 1200px)
     .container
@@ -59,6 +61,10 @@ img
 @media (max-width: 768px)       
     .container
         max-width: 580px
-        width: 90%    
+        width: 90%  
+@media (max-width: 320px)
+    .container
+        max-width: 278px  
+                    
            
 
