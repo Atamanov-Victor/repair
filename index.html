@@ -9,6 +9,7 @@
     <!-- <link rel="stylesheet" href="css/slick.css"> -->
     <link rel="stylesheet" href="css/owl.carousel.css">
     <link rel="stylesheet" href="css/animate.css">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=001ec7bb-6ec4-4b6a-9aeb-b3d378bdaa73&lang=ru_RU" type="text/javascript"></script>
     <title>Ремонт квартир</title>
 </head>
 <body>
@@ -281,6 +282,50 @@
         </section>
         <!-- /.brif section -->
     </main>
+    <footer class="footer">
+        <div class="map" id="map" ></div>
+        <div class="container">
+            <div class="contacts-block">
+                <div class="contacts">
+                    <h3 class="contacts__title">Приезжайте к нам в гости!
+                            Проконсультируем Вас <br>
+                            по всем вопросам ремонта
+                    </h3>
+                    <!-- /.contacts__title -->
+                    <ul class="contacts-list">
+                        <li class="contacts-list__item">
+                            <span class="contacts-list__icon">
+                                <img src="img/footer/map-placeholder.png" alt="map">
+                            </span>
+                            <span class="contacts-list__text">г. Москва <br>
+                                    <span class="contacts-list__bold">ул. Ленинга, д. 10, <br>
+                                    корпус 2, оф. 308</span></span>
+                        </li>
+                        <li class="contacts-list__item">
+                            <span class="contacts-list__icon">
+                                <img src="img/footer/clock.png" alt="clock">
+                            </span>
+                            <span class="contacts-list__text">Режим работы: <br>
+                                    <span class="contacts-list__bold">с 9:00 до 18:00</span> <br>
+                                    </span>
+                        </li>
+                        <li class="contacts-list__item">
+                            <span class="contacts-list__icon">
+                                <img src="img/footer/phone.png" alt="phone">
+                            </span>
+                            <span class="contacts-list__text">Телефон <br>
+                            <a href="tel:+ 7(495)42-251-31" class="contacts-list__bold contacts-list__link">+ 7 (495) 42-251-31</a>
+                            </span>
+
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.contacts -->
+            </div>
+            <!-- /.contacts-block -->
+        </div>
+        <!-- /.container -->
+    </footer>
 
     <div class="modal" id="modal">
         <div class="modal-dialog">
@@ -299,6 +344,27 @@
     <script src="js/slider.js"></script>
     <script src="js/wow.js"></script>
     <script src="js/validation.js"></script>
+    <script type="text/javascript">
+        ymaps.ready(init);    
+        function init(){ 
+            var myMap = new ymaps.Map("map", {
+                center: [55.61140907, 37.20112250],
+                zoom: 14,
+                geometry: {
+                    type: "Point",
+                    coordinates: [55.61140907, 37.20112251]
+                }
+            }); 
+            var myGeoObject = new ymaps.GeoObject({
+                geometry: {
+                type: "Point", // тип геометрии - точка
+                coordinates: [55.61140907, 37.20112251] // координаты точки
+        }
+    });
+        myMap.geoObjects.add(myGeoObject); 
+
+        }
+    </script>
 
     <!-- <script
   src="https://code.jquery.com/jquery-3.4.1.min.js"

@@ -29,7 +29,7 @@ $(document).ready(function(){
             }
         },
         errorClass: "invalid",
-        errorElement: "em"
+        errorElement: "div"
         
     })
 })
