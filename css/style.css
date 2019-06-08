@@ -658,6 +658,7 @@ img {
 }
 
 .portfolio__title {
+  opacity: 0;
   margin: auto;
   text-align: center;
   max-width: 787px;
@@ -672,6 +673,33 @@ img {
 
 .slider-item {
   margin: auto;
+}
+
+@-webkit-keyframes fadingOut {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadingOut {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fadingOut {
+  display: block;
+  -webkit-animation-name: fadingOut;
+          animation-name: fadingOut;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  opacity: 1;
 }
 
 @media (max-width: 800px) {
