@@ -1009,6 +1009,12 @@ img {
   }
 }
 
+@media (max-width: 1200px) {
+  .brif {
+    background-size: 50%, cover;
+  }
+}
+
 @media (max-width: 768px) {
   .brif {
     padding: 60px 0;
