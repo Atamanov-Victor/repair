@@ -1,0 +1,30 @@
+.profit
+    width: 370px
+    height: 410px
+    background-color: $profit-card
+    padding: 27px 0 0 26px
+    position: relative
+    &__text
+        display: block
+        font-size: 16px
+        line-height: 23px
+        max-width: 290px
+        +reg
+    &__image
+        position: absolute
+        left: 0
+        bottom: 0    
+    &s
+        padding-top: 100px
+        padding-bottom: 100px
+    &-block
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+@media (max-width: 1200px)
+    .profit
+        margin-right: 30px
+        margin-bottom: 30px
+        &-block
+            justify-content: center           
+
