@@ -43,3 +43,68 @@
         &__link
             text-decoration: none
 
+@media (max-width: 1200px) 
+    .contacts
+        padding-left: 100px
+@media (max-width: 768px) 
+    .footer
+        display: flex
+        flex-direction: column
+        justify-content: space-between 
+        flex-wrap: wrap             
+    .map
+        position: static
+        display: block
+        width: 100%
+        order: 2     
+    .contacts 
+        width: 100%
+        flex-basis: 100%
+        padding: 0
+        padding-top: 63px 
+        &__title
+            text-align: center
+            font-size: 18px
+            margin-top: 0px
+            line-height: 1.27
+            margin-bottom: 31px   
+        &-list
+            display: flex
+            flex-direction: column
+            &__text
+                min-width: 145px
+            &__item
+                margin: 0 auto
+                margin-bottom: 30px
+
+@media (max-width: 320px)    
+    .footer
+        display: flex
+        flex-direction: column
+        justify-content: space-between 
+        flex-wrap: wrap             
+    .map
+        position: static
+        display: block
+        width: 100%
+        order: 2
+    .contacts 
+        width: 100%
+        flex-basis: 100%
+        padding: 0
+        padding-top: 63px
+        &__title
+            font-size: 18px
+            margin-top: 0px
+            line-height: 1.27
+            margin-bottom: 31px
+        &-list
+            &__icon
+                margin-right: 9px  
+            &__item
+                &:last-child
+                    margin-bottom: 57px    
+
+  
+
+

@@ -1146,4 +1146,109 @@ img {
 .contacts-list__link {
   text-decoration: none;
 }
+
+@media (max-width: 1200px) {
+  .contacts {
+    padding-left: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .map {
+    position: static;
+    display: block;
+    width: 100%;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .contacts {
+    width: 100%;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    padding: 0;
+    padding-top: 63px;
+  }
+  .contacts__title {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 0px;
+    line-height: 1.27;
+    margin-bottom: 31px;
+  }
+  .contacts-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contacts-list__text {
+    min-width: 145px;
+  }
+  .contacts-list__item {
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 320px) {
+  .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .map {
+    position: static;
+    display: block;
+    width: 100%;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .contacts {
+    width: 100%;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    padding: 0;
+    padding-top: 63px;
+  }
+  .contacts__title {
+    font-size: 18px;
+    margin-top: 0px;
+    line-height: 1.27;
+    margin-bottom: 31px;
+  }
+  .contacts-list__icon {
+    margin-right: 9px;
+  }
+  .contacts-list__item:last-child {
+    margin-bottom: 57px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
