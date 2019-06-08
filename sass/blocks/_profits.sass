@@ -21,10 +21,24 @@
         display: flex
         justify-content: space-between
         flex-wrap: wrap
+    &__bold
+        +bold    
 @media (max-width: 1200px)
     .profit
         margin-right: 30px
         margin-bottom: 30px
+        &:last-child
+            margin-right: 0px
         &-block
-            justify-content: center           
+            justify-content: center
+@media (max-width: 320px)                
+    .profit
+        width: 272px
+        height: 300px
+        padding: 19px 0 0 19px
+        margin-right: 0px
+        &__text 
+            font-size: 12px
+            line-height: 16.83px  
+            max-width: 217px     
 
