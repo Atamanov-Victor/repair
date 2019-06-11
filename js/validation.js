@@ -32,4 +32,30 @@ $(document).ready(function(){
         errorElement: "div"
         
     })
+    $('#offer-form').validate({
+        rules: {
+            name: {
+                required: true,
+                minlength: 2,
+                maxlength: 15
+            },
+            phone: {
+                required: true
+            },
+            
+        },
+        messages: {
+            name: {
+                required: "Введите своё имя",
+                minlength: jQuery.validator.format("Имя должно содержать как минимум {0} символа"),
+                maxlength: "Имя слишком длинное!"
+            },
+            phone: {
+                required: "Введите свой телефон"
+            },
+        },
+        errorClass: "invalid",
+        errorElement: "div"
+        
+    })
 })

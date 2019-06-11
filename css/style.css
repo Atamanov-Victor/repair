@@ -44,6 +44,24 @@ img {
   background-color: #ffdb33;
 }
 
+.invalid {
+  border: 1px solid #ff0000 !important;
+  font-family: 'Museo Sans Light', sans-serif;
+  font-weight: 300;
+}
+
+#name-error {
+  border: none !important;
+}
+
+#phone-error {
+  border: none !important;
+}
+
+#email-error {
+  border: none !important;
+}
+
 .section-title {
   font-size: 30px;
   font-family: 'Museo Sans Bold', sans-serif;
@@ -957,22 +975,6 @@ img {
   margin-bottom: 33px;
   font-family: 'Museo Sans Bold', sans-serif;
   font-weight: 700;
-}
-
-.invalid {
-  border: 1px solid #ff0000 !important;
-}
-
-#name-error {
-  border: none !important;
-}
-
-#phone-error {
-  border: none !important;
-}
-
-#email-error {
-  border: none !important;
 }
 
 .interview {
