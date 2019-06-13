@@ -12,6 +12,13 @@
         background-color: white
         left: 0
         top: 0
+    #name-error
+        position: absolute
+        top: 170px  
+    #phone-error
+        position: absolute
+        top: 170px  
+        left: 255px      
     &-block
         position: relative
         width: 50%
@@ -38,6 +45,7 @@
         width: 100% 
         min-height: 70px
         margin-bottom: 0px
+        cursor: pointer 
         +bold
     &__info
         display: flex
@@ -61,11 +69,26 @@
 @media (max-width: 1200px)
     .offer
         background-size: cover
+        #name-error
+            position: static
+        #phone-error
+            position: static    
+        // #name-error
+        //     top: 170px
+        // #phone-error
+        //     top: 330px 
+        //     left: 0px 
         &__input
             width: 100%
             margin-bottom: 10px
         &__button
             font-size: 13px
+@media (max-width: 874px)
+    .offer
+        // #name-error
+        //     top: 205px 
+        // #phone-error
+        //     top: 360px              
 @media (max-width: 805px)            
     .offer
         &__info
@@ -74,6 +97,10 @@
     .offer
         padding: 10px
         background: white
+        // #name-error
+        //     top: 170px  
+        // #phone-error
+        //     top: 330px        
         &-block
             width: 100%
             padding-right: 0
@@ -86,10 +113,16 @@
             display: block  
         &__contact
             max-width: 225px    
-            margin-bottom: 10px              
+            margin-bottom: 10px 
+//381px media
+
 @media (max-width: 320px)
     .offer
         padding: 50px 0px
+        // #name-error
+        //     top: 125px  
+        // #phone-error
+        //     top: 278px
         &__title
             max-width: 270px
             margin-top: 0px

@@ -1,5 +1,6 @@
 @font-face {
   font-family: 'Museo Sans Light';
+  font-display: swap;
   src: url("../fonts/MuseoSansCyrl/MuseoSansCyrl-300.eot");
   src: url("../fonts/MuseoSansCyrl/MuseoSansCyrl-300.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-300.woff") format("woff"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-300.ttf") format("truetype");
   font-weight: normal;
@@ -8,6 +9,7 @@
 
 @font-face {
   font-family: 'Museo Sans Bold';
+  font-display: swap;
   src: url("../fonts/MuseoSansCyrl/MuseoSansCyrl-700.eot");
   src: url("../fonts/MuseoSansCyrl/MuseoSansCyrl-700.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-700.woff") format("woff"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-700.ttf") format("truetype");
   font-weight: normal;
@@ -395,14 +397,17 @@ img {
 
 #name-error {
   border: none !important;
+  color: red;
 }
 
 #phone-error {
   border: none !important;
+  color: red;
 }
 
 #email-error {
   border: none !important;
+  color: red;
 }
 
 .section-title {
@@ -1235,6 +1240,17 @@ img {
   top: 0;
 }
 
+.offer #name-error {
+  position: absolute;
+  top: 170px;
+}
+
+.offer #phone-error {
+  position: absolute;
+  top: 170px;
+  left: 255px;
+}
+
 .offer-block {
   position: relative;
   width: 50%;
@@ -1273,6 +1289,7 @@ img {
   width: 100%;
   min-height: 70px;
   margin-bottom: 0px;
+  cursor: pointer;
   font-family: 'Museo Sans Bold', sans-serif;
   font-weight: 700;
 }
@@ -1313,6 +1330,12 @@ img {
 @media (max-width: 1200px) {
   .offer {
     background-size: cover;
+  }
+  .offer #name-error {
+    position: static;
+  }
+  .offer #phone-error {
+    position: static;
   }
   .offer__input {
     width: 100%;
@@ -1603,7 +1626,7 @@ img {
 
 @media (max-width: 320px) {
   .price {
-    padding: 46px 0;
+    padding: 46px 0 0px 0;
   }
   .price__title {
     font-size: 18px;
@@ -2163,6 +2186,9 @@ img {
 }
 
 @media (max-width: 320px) {
+  .steps {
+    padding-top: 17px;
+  }
   .steps__title {
     font-size: 18px;
     max-width: 237px;
@@ -2311,6 +2337,15 @@ img {
     font-size: 12px;
     line-height: 16.83px;
     max-width: 217px;
+  }
+}
+
+@media (max-width: 320px) {
+  .profits {
+    padding-bottom: 12px;
+  }
+  .profit-title {
+    margin-bottom: 57px;
   }
 }
 
